@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Solo - Creative Website</title>
+
+
+    <!-- important metatag: A special html tag that provides information about the web page...for better seo searches-->
+    <meta charset="utf-8"> <!-- setting language unicoding , important for non english or multilingual we pages -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- this is for microsoft edge browser , the page will be uploaded on edge browser-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- for how the website should be on mobile -->
+
+    <!-- Favicon, it will show with website title, a picture  with a very small size, convert pic into ICO file, improt befor use-->
+    <link rel="shortcut icon" type="text/css" href="./img/solo-images/favicon/favicon.ico">
+
+    <!--Google font---Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google font---Open Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome cloud link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- ================================================================================================================================
+                     have to update the order jQuery--Bootstrap--Javascript file link (this order matters)
+    ===================================================================================================================================== -->
+
+
+    <!--Bootstrap file links-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!--External Jquery google link taken from the website: jquery.com-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- owl carousel css file links-->
+    <link rel="stylesheet" href="css/owl-carosel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carosel/owl.theme.default.min.css">
+    
+    <!-- Responsive Tabs CSS-->
+    <link type="text/css" rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css" />
+
+    <!--External/custom CSS file link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+
+
+
+<body>
+
+    <!-- ==============================================================================================================================
+                                                              PRELOADER
+    =================================================================================================================================== -->
+
+    <div id="preloader">
+        <!-- this preloader div is going to cover the whole page  -->
+        <div id="status">
+            <!-- this status div is to going to show the preload animation -->
+            &nbsp;
+            <!--white space -->
+        </div>
+
+    </div>
+
+
+    <!-- ===============================================================================================================================
+                                                             HOME SECTION
+    ==================================================================================================================================== -->
+
+    <section id="home">
+
+        <!-- background video-->
+        <video id="background-video" poster='./img/home-bg-videos/video/solo.jpg' autoplay loop muted>
+            <source src="./img/home-bg-videos/video/solo.mp4" type="video/mp4">
+            <source src="./img/home-bg-videos/video/solo.ogv" type="video/ogg">
+            <source src="./img/home-bg-videos/video/solo.webm" type="video/webm">
+        </video>
+
+        <!--Overlay over the background video -->
+        <div id="overlay"></div>
+
+        <div id="home-content">
+            <div id="home-content-inner" class="text-center">
+                <!--text center is a bootstrap class -->
+                <div id="home-heading">
+                    <h1 id="heading-1">Digital</h1><br>
+                    <h1 id="heading-2">Creative <span>Agency</span></h1>
+                </div>
+                <div id="home-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam in nihil minima unde qui nihil minima.</p>
+                </div>
+                <div id="home-button">
+                    <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!--arrow down -->
+        <a herf="about" id="arrow-down">
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </section>
+
+    <!-- =============================================================================================================================
+                                                              ABOUT SECTION
+    ================================================================================================================================== -->
+
+    <section id="about">
+
+        <!-- About part 1-->
+
+        <div id="about-01">
+            <div class="content-box-lg">
+                <!-- here class attribute is given instead on id attribute because this content boxes will be repeated in other sections, so it should not be unique like id attribute, cause we can't have same id in multiple places, but we can use same class id in multiple places  -->
+
+
+                <!--Bootstrap grid layout- we have to create 3 things : 1.Container 2.Row  3.column -->
+                <div class="container">
+
+                    <div class="row">
+
+                        <!--about left side -->
+                        <div class="col-md-6">
+                            <!-- we are using bootstrap middle size 12 column grid system so for first 2 part of the about section we devide the 12 column for making it 2 column-->
+                            <div id="about-left">
+                                <div class="vertical-heading">
+                                    <h5> Who We Are</h5>
+                                    <h2>A <strong>Story</strong><br>About us</h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="about-right">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium voluptatem quisquam, necessitatibus ullam vitae soluta ex, esse sapiente. Reprehenderit ipsa minima eum quas quidem asperiores adipisci, iusto minus nobis!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, ullam dignissimos pariatur, aut odio minus facilis quisquam veritatis sapiente maxime, labore error atque doloribus doloremque nesciunt perferendis numquam aspernatur, rem!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Bottom of About section -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="about-bottom">
+                                <img src="img/solo-images/about/about.png" alt="About Us" class="img-responsive">
+                                <!--image responsive is a bootstrap class -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--About Part 2 -->
+        <div id="about-02">
+            <div class="content-box-md">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <!--text-center is a bootstrap class -->
+                                <i class="fa fa-rocket"></i>
+                                <h3>Mission</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vero, libero maxime eius, assumenda culpa laudantium eum odio, dolore aliquam dicta aperiam, iure a facere aliquid hic asperiores magni sapiente!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <!--text-center is a bootstrap class -->
+                                <i class="fa fa-eye"></i>
+                                <h3>Vission</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vero, libero maxime eius, assumenda culpa laudantium eum odio, dolore aliquam dicta aperiam, iure a facere aliquid hic asperiores magni sapiente!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about-item text-center">
+                                <!--text-center is a bootstrap class -->
+                                <i class="fa fa-pencil"></i>
+                                <h3>Passion</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe vero, libero maxime eius, assumenda culpa laudantium eum odio, dolore aliquam dicta aperiam, iure a facere aliquid hic asperiores magni sapiente!</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =============================================================================================================================
+                                                              TEAM SECTION
+    ================================================================================================================================== -->
+    <section id="team">
+
+        <div class="content-box-lg">
+            <!--content box -->
+
+            <div class="container">
+                <!--Bootstrap container -->
+                <div class="row">
+
+                    <!-- Team section left-->
+                    <div class="col-md-6">
+
+                        <div id="team-left">
+
+                            <div class="vertical-heading">
+                                <h5> Who We Are</h5>
+                                <h2>Meet Our<br><strong>Talented</strong> Team</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum animi, ab, velit accusantium blanditiis qui officiis atque fuga, corrupti possimus id natus, ipsa adipisci aliquam ipsum voluptatum delectus. Veritatis, animi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Team section right-->
+                    <div class="col-md-6">
+                        <div id="team-members" class="owl-carousel owl-theme">
+
+                            <!-- 1st team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-1.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2nd team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-2.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3rd team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-3.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4th team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-4.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5th team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-5.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- 6th team member-->
+                            <div class="team-member">
+
+                                <img src="img/solo-images/team/team-6.jpg" alt="team-member" class="img-responsive">
+                                <!--Bootstram class: img-responsive -->
+
+                                <div class="team-member-overlay text-center">
+                                    <!-- text-center : bootstrap class to make sure everything on the center -->
+
+                                    <div class="team-member-info">
+                                        <h6> Keyin Greer</h6>
+                                        <p>Web Designer</p>
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Progress Bar -->
+                <div id="progress-elements">
+
+                    <div class="row">
+                        <!-- Skill 01-->
+                        <div class="col-md-6">
+                            <div class="skill">
+                                <h4> Web Desing</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="skill">
+                                <h4> Photoshop/Illustrator</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill">
+                                <h4> Web Development</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill">
+                                <h4>Digital Marketing</h4>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================================================================================================
+                                                              STATEMENT SECTION
+    ================================================================================================================================== -->
+
+    <section id="statement">
+        <div class="content-box-lg">
+            <!-- this content box will create the top and bottom space for the statement section -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="tech-statement" class="text-center">
+                            <!-- bootstrap text-center class-->'
+                            <h3><i class="fa fa-quote-left"></i>We design and develop services for customers of all sizes,<br> specializing in creating stylish,modern websites and online stores.<i class="fa fa-quote-right"></i></h3>
+                            <p>-Danlet Watrous</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================================================================================================================
+                                                              SERVICES SECTION
+    ================================================================================================================================== -->
+
+    <section id="services">
+        <!--Services 01 -->
+        <div id="services-01">
+            <div class="content-box-lg">
+                <!-- this content box will create the top and bottom space for the statement section -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="horizontal-heading ">
+                                <h5> What We Do</h5>
+                                <h2>Our Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- The Left side - will be image-->
+                <div class="col-md-7">
+                    <img src="img/solo-images/services/laptop-lamp.png" alt="Laptop" class="img-responsive">
+                </div>
+
+                <!-- The right side-list of services --->
+                <div class="col-md-5">
+                    <!-- service item 01-->
+                    <div class="service">
+                        <div class="row">
+                            <!--Bootstrap's nested columns -->
+                            <div class="col-md-2">
+                                <div class="icon-right-text">
+                                    <i class="fa fa-paint-brush"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h5>Service 01</h5>
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, asperiores tempora vel incidunt aspernatur dignissimos amet, in repudiandae omnis officia ab, modi quae aperiam sunt labore culpa? Accusamus, mollitia, esse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- service 02-->
+                    <div class="service">
+                        <div class="row">
+                            <!--Bootstrap's nested columns -->
+                            <div class="col-md-2">
+                                <div class="icon-right-text">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h5>Service 02</h5>
+                                <h4>Web Development</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, asperiores tempora vel incidunt aspernatur dignissimos amet, in repudiandae omnis officia ab, modi quae aperiam sunt labore culpa? Accusamus, mollitia, esse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="row">
+                            <!--Bootstrap's nested columns -->
+                            <div class="col-md-2">
+                                <div class="icon-right-text">
+                                    <i class="fa fa-paper-plane-o"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <h5>Service 03</h5>
+                                <h4>Digital Marketing</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, asperiores tempora vel incidunt aspernatur dignissimos amet, in repudiandae omnis officia ab, modi quae aperiam sunt labore culpa? Accusamus, mollitia, esse.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Services 02-->
+        <div id="services-02">
+                <div class="content-box-md">
+                    <!-- this content box will create the top and bottom space for the statement section -->
+
+                    <div id="services-tab">
+                        <ul class="text-center">
+                            <li><a href="#service-tab-01">Creativity</a></li>
+                            <li><a href="#service-tab-02">Strategy</a></li>
+                            <li><a href="#service-tab-03">Design</a></li>
+                            <li><a href="#service-tab-04">Development</a></li>
+                        </ul>
+
+                        <!-- Service tab 01-->
+                        <div id="service-tab-01" class="service-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/solo-images/services/service-tab-img-01.jpg" alt="Creativity">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-bg">
+                                            <h2>01</h2>
+                                            <h3>Get more from life with creativity</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate explicabo facere expedita debitis vitae? Beatae odio optio repudiandae minima esse, facilis quod vero laudantium, cupiditate quos voluptatem, officiis error!</p>
+
+                                            <div id="services-02-btn">
+                                                <a class="btn btn-general btn-yellow" href="#services" title="Get in Touch" role="button">Get in Touch</a> <!-- btn is the bootstrap class-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service tab 02-->
+                        <div id="service-tab-02" class="service-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/solo-images/services/service-tab-img-02.jpg" alt="Strategy">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-bg">
+                                            <h2>02</h2>
+                                            <h3>Get more from life with creativity</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate explicabo facere expedita debitis vitae? Beatae odio optio repudiandae minima esse, facilis quod vero laudantium, cupiditate quos voluptatem, officiis error!</p>
+
+                                            <div id="services-02-btn">
+                                                <a class="btn btn-general btn-yellow" href="#services" title="Get in Touch" role="button">Get in Touch</a> <!-- btn is the bootstrap class-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service tab 03-->
+                        <div id="service-tab-03" class="service-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/solo-images/services/service-tab-img-03.jpg" alt="Design">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-bg">
+                                            <h2>03</h2>
+                                            <h3>Get more from life with creativity</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate explicabo facere expedita debitis vitae? Beatae odio optio repudiandae minima esse, facilis quod vero laudantium, cupiditate quos voluptatem, officiis error!</p>
+
+                                            <div id="services-02-btn">
+                                                <a class="btn btn-general btn-yellow" href="#services" title="Get in Touch" role="button">Get in Touch</a> <!-- btn is the bootstrap class-->
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service tab 04-->
+                        <div id="service-tab-04" class="service-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/solo-images/services/service-tab-img-04.jpg" alt="Development">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="tab-bg">
+                                            <h2>04</h2>
+                                            <h3>Get more from life with creativity</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat voluptate explicabo facere expedita debitis vitae? Beatae odio optio repudiandae minima esse, facilis quod vero laudantium, cupiditate quos voluptatem, officiis error!</p>
+
+                                            <div id="services-02-btn">
+                                                <a class="btn btn-general btn-yellow" href="#services" title="Get in Touch" role="button">Get in Touch</a> <!-- btn is the bootstrap class-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+ <!-- =============================================================================================================================
+                                                              WORK/PORTFOLIO SECTION
+    ================================================================================================================================== -->
+
+<!--Portfolio -->
+<section id="portfolio">
+    <div class="content-box-md">
+        <!-- this content box will create the top and bottom space for the statement section -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="vertical-heading">
+                        <h5> Find Out Work</h5>
+                        <h2>Our<br>Amazing <strong>Work</strong></h2>
+                    </div>
+
+                </div>
+                <!-- Portfolio items filters-->
+                <div class="col-md-12">
+                    <div id="isotope-filters">
+                        <button data-filter="*" class="btn active"><span>All</span></button><!-- * will consider all item, span will help to style the button-->
+                        <button data-filter=".logo" class="btn"><span>Logo</span></button>
+                        <button data-filter=".web" class="btn"><span>Web</span></button>
+                        <button data-filter=".mobile" class="btn"><span>Mobile</span></button>
+                        <button data-filter=".desktop" class="btn"><span>Desktop</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="portfolio-wrapper">
+            <div class="container-fluid">
+                <div class="row no-gutters"> <!--Bootstrap class no-gutters -->
+                    <div id="isotope-container">
+
+                        <!-- Portfolio 01-->
+                        <div class="col-md-3 desktop">
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/001.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/001.jpg" class="img-responsive" alt="portfolio 01"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 web">
+                            <!-- Portfolio 02-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/002.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/002.jpg" class="img-responsive" alt="portfolio 02"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 web mobile logo">
+                            <!-- Portfolio 03-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/003.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/003.jpg" class="img-responsive" alt="portfolio 03"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 logo web">
+                            <!-- Portfolio 04-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/004.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/004.jpg" class="img-responsive" alt="portfolio 04"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 web">
+                            <!-- Portfolio 05-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/005.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/005.jpg" class="img-responsive" alt="portfolio 05"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 logo desktop">
+                            <!-- Portfolio 06-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/006.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/006.jpg" class="img-responsive" alt="portfolio 06"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 web mobile ">
+                            <!-- Portfolio 07-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/007.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/007.jpg" class="img-responsive" alt="portfolio 07"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center">
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 web mobile">
+                            <!-- Portfolio 08-->
+                            <div class="portfolio-item">
+                                <a href="img/solo-images/portfolio/008.jpg" alt="Portfolio" title="add description">
+                                    <img src="img/solo-images/portfolio/008.jpg" class="img-responsive" alt="portfolio 08"><!-- img responsive is the bootstrap class for making images reponsive-->
+                                    <div class="portfolio-item-overlay">
+                                        <div class="portfolio-item-details text-center"> <!-- text-center is a bootstrap class text center alignment-->
+                                            <!-- Item Header-->
+                                            <h3>Logo</h3>
+                                            <!--span will be using for strips -->
+                                            <span></span>
+                                            <!-- Item Description-->
+                                            <p>Destop Design</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+    
+
+
+
+
+
+    <section>
+      <!-- Footer  -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright &copy; 2017 All Rights Reserved By <span>SOLO Inc.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+                <!-- Back To Top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        
+        <!-- Back To Top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </footer>
+    </section>
+
+    <!-- Footer Ends -->
+
+
+
+    <!-- =========================================================================================================================
+                                     jQuery--Bootstrap--Javascript file link (this order matters)
+    =============================================================================================================================== -->
+
+    <!-- Bootstrap JS-->
+    <script src="js/bootstrap/bootstrap.js"></script>
+
+    <!--owl carousel js-->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Waypoints plugin-->
+    <script src="js/waypoints/jquery.waypoints.min.js"></script>
+    
+    <!--Responsive Tabs plugin -->
+    <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+    
+    <!--isotope filter plugin js -->
+    <script src="js/isotope.metafizzy/isotope.pkgd.min.js.js"></script>
+
+    <!--JavaScript-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
